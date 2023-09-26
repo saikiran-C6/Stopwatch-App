@@ -23,7 +23,7 @@ body {
 .time {
     font-size: 36px;
     color: whitesmoke; 
-    margin-bottom: 10px; 
+    margin-bottom: 20px; 
 }
 
 /* Styles for the units [hr, min, sec] */
@@ -36,8 +36,8 @@ body {
 /* control buttons */
 .controls {
     display: flex; 
-    gap: 10px; 
-    margin-bottom: 5%;
+    gap: 15px; 
+    margin-bottom: 5%;    
 }
 
 .control {
@@ -48,7 +48,7 @@ body {
 
 /* animation for control buttons */
 .control:hover {
-    box-shadow: 0 0 3px 3px white; 
+    box-shadow: 0 0 2px 2px white; 
 }
 
 /* Styles for the "Start" button */
@@ -56,6 +56,7 @@ body {
     background-color: #4CAF50; 
     color: white; 
     border: none; 
+    border-radius: 10px 0px 10px 0px;
 }
 
 /* Styles for the "Stop" button */
@@ -63,6 +64,7 @@ body {
     background-color: #F44336; 
     color: white; 
     border: none; 
+    border-radius: 10px 0px 10px 0px;
 }
 
 /* Styles for the "Reset" button */
@@ -70,4 +72,5 @@ body {
     background-color: #008CBA; 
     color: white; 
     border: none; 
+    border-radius: 10px 0px 10px 0px;
 }
