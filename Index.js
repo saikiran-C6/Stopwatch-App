@@ -2,6 +2,7 @@ let startTime;
 let isRunning = false;
 let intervalId;
 
+// fetching Id's of the variables
 const display = document.getElementById("display");
 const horusTimer = document.getElementById("hours");
 const minutesTimer = document.getElementById("minutes");
@@ -10,6 +11,7 @@ const startButton = document.getElementById("start");
 const stopButton = document.getElementById("stop");
 const resetButton = document.getElementById("reset");
 
+// click function to start the time
 startButton.addEventListener("click", () => {
     if (!isRunning) {
         startTime = startTime || Date.now();
@@ -18,6 +20,7 @@ startButton.addEventListener("click", () => {
     }
 });
 
+// click function to stop the time
 stopButton.addEventListener("click", () => {
     if (isRunning) {
         clearInterval(intervalId);
@@ -25,6 +28,7 @@ stopButton.addEventListener("click", () => {
     }
 });
 
+// click function to reset the time
 resetButton.addEventListener("click", () => {
     clearInterval(intervalId);
     isRunning = false;
