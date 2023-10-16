@@ -1,13 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
 /* Root styles for the stopwatch */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-image: url('sw3.webp'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    background-position: center; 
-    overflow: hidden; 
+    font-family: 'Poppins', sans-serif;
+    text-align: center;    
+    background-color: #021636;
+    margin: 0;
 }
 
 /* stopwatch container styles */
@@ -15,15 +13,25 @@ body {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    justify-content: flex-end;     
+    justify-content: flex-end;    
     height: 100vh; 
+    position: relative;    
+}
+
+/* Background image style */
+.background-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; 
 }
 
 /* Styles for the time display */
 .time {
     font-size: 36px;
     color: whitesmoke; 
-    margin-bottom: 20px; 
+    margin-bottom: 10px;
 }
 
 /* Styles for the units [hr, min, sec] */
@@ -31,13 +39,14 @@ body {
     display: flex; 
     gap: 20px; 
     color: whitesmoke; 
+    margin-bottom: 5px;
 }
 
 /* control buttons */
 .controls {
     display: flex; 
     gap: 15px; 
-    margin-bottom: 5%;    
+    margin-bottom: 0.5%;    
 }
 
 .control {
